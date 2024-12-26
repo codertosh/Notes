@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LS Command Hand Note</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+            background-color: #2d2d2d; /* Dark background */
+            color: #d3d3d3; /* Light text */
+        }
+        h1, h2 {
+            color: #76d7c4; /* Light teal color for headings */
+        }
+        pre {
+            background-color: #333333; /* Darker background for code blocks */
+            padding: 10px;
+            border: 1px solid #444;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            color: #f1f1f1; /* Light text inside code blocks */
+        }
+        ul {
+            list-style-type: none;
+        }
+        li {
+            margin: 5px 0;
+        }
+        code {
+            color: #76d7c4; /* Light teal color for inline code */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>LS Command in Terminal</h1>
+    <p>The <code>ls</code> command is used to list files and directories in Unix-like operating systems such as Linux and macOS. It is commonly used in the terminal to view the contents of a directory.</p>
+
+    <h2>Basic Syntax</h2>
+    <pre>ls [options] [directory]</pre>
+    <ul>
+        <li><strong>[options]</strong> - Flags to modify the behavior of <code>ls</code>.</li>
+        <li><strong>[directory]</strong> - The directory to list (if not specified, it lists the current directory).</li>
+    </ul>
+
+    <h2>Commonly Used Options</h2>
+    <ul>
+        <li><strong>-l</strong> (long listing format): Displays detailed information such as file permissions, size, owner, and modification date.</li>
+        <pre>ls -l</pre>
+        <li><strong>-a</strong> (all): Lists all files, including hidden files (those starting with a dot <code>.</code>).</li>
+        <pre>ls -a</pre>
+        <li><strong>-h</strong> (human-readable): Displays file sizes in human-readable format (e.g., KB, MB).</li>
+        <pre>ls -lh</pre>
+        <li><strong>-R</strong> (recursive): Lists files and directories recursively, including files in subdirectories.</li>
+        <pre>ls -R</pre>
+        <li><strong>-S</strong> (sort by size): Sorts files by size, with the largest files listed first.</li>
+        <pre>ls -S</pre>
+        <li><strong>-t</strong> (sort by time): Sorts files by modification time, with the most recently modified files listed first.</li>
+        <pre>ls -t</pre>
+        <li><strong>-r</strong> (reverse): Reverses the order of the list, often used with sorting options.</li>
+        <pre>ls -lr</pre>
+        <li><strong>-1</strong> (one per line): Displays each file on a new line.</li>
+        <pre>ls -1</pre>
+        <li><strong>--color</strong>: Displays files with color-coding based on file type.</li>
+        <pre>ls --color</pre>
+    </ul>
+
+    <h2>Example Usages</h2>
+    <ul>
+        <li><strong>Basic list</strong>
+            <pre>ls</pre>
+        </li>
+        <li><strong>List with details</strong>
+            <pre>ls -l</pre>
+        </li>
+        <li><strong>List all files (including hidden ones)</strong>
+            <pre>ls -a</pre>
+        </li>
+        <li><strong>List files in long format with human-readable sizes</strong>
+            <pre>ls -lh</pre>
+        </li>
+        <li><strong>List files in reverse time order</strong>
+            <pre>ls -ltr</pre>
+        </li>
+    </ul>
+
+    <p>The <code>ls</code> command is a versatile tool for listing and managing files in the terminal, and it's often used in conjunction with other commands like <code>git</code> for file management in repositories.</p>
+
+</body>
+</html>
